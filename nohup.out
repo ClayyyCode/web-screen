@@ -1,0 +1,854 @@
+ * Serving Flask app "app"
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Serving Flask app "app"
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+Traceback (most recent call last):
+  File "/usr/bin/flask", line 11, in <module>
+    load_entry_point('Flask==1.1.1', 'console_scripts', 'flask')()
+  File "/usr/lib/python3/dist-packages/flask/cli.py", line 966, in main
+    cli.main(prog_name="python -m flask" if as_module else None)
+  File "/usr/lib/python3/dist-packages/flask/cli.py", line 586, in main
+    return super(FlaskGroup, self).main(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/click/core.py", line 717, in main
+    rv = self.invoke(ctx)
+  File "/usr/lib/python3/dist-packages/click/core.py", line 1137, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/usr/lib/python3/dist-packages/click/core.py", line 956, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/usr/lib/python3/dist-packages/click/core.py", line 555, in invoke
+    return callback(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/click/decorators.py", line 64, in new_func
+    return ctx.invoke(f, obj, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/click/core.py", line 555, in invoke
+    return callback(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/flask/cli.py", line 852, in run_command
+    run_simple(
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 1012, in run_simple
+    inner()
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 956, in inner
+    srv = make_server(
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 807, in make_server
+    return ThreadedWSGIServer(
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 701, in __init__
+    HTTPServer.__init__(self, server_address, handler)
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/http/server.py", line 138, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+14.0.224.149 - - [29/Apr/2022 21:59:18] "GET /?pattern=CDLXSIDEGAP3METHODS HTTP/1.1" 200 -
+10.156.229.200 - - [29/Apr/2022 21:59:20] "GET /?pattern=CDLDOJI HTTP/1.1" 200 -
+14.0.224.149 - - [29/Apr/2022 21:59:21] "GET /?pattern=CDLXSIDEGAP3METHODS HTTP/1.1" 200 -
+ * Serving Flask app "app"
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+10.156.229.232 - - [29/Apr/2022 22:01:35] "GET / HTTP/1.1" 200 -
+10.156.229.200 - - [29/Apr/2022 22:04:47] "GET /?pattern=CDLDOJI HTTP/1.1" 200 -
+10.156.229.200 - - [29/Apr/2022 22:04:49] "GET /favicon.ico HTTP/1.1" 404 -
+14.0.224.149 - - [29/Apr/2022 22:09:10] "GET /?pattern=CDLXSIDEGAP3METHODS HTTP/1.1" 200 -
+10.156.229.200 - - [29/Apr/2022 22:23:47] "GET /?pattern=CDLDOJI HTTP/1.1" 200 -
+10.156.229.200 - - [29/Apr/2022 22:24:07] "GET /?pattern=CDLDOJI HTTP/1.1" 200 -
+10.156.229.200 - - [29/Apr/2022 22:25:34] "GET /?pattern=CDLMARUBOZU HTTP/1.1" 200 -
+223.16.18.182 - - [29/Apr/2022 22:31:00] "GET /?pattern=CDLMARUBOZU HTTP/1.1" 200 -
+223.16.18.182 - - [29/Apr/2022 22:31:02] "GET /favicon.ico HTTP/1.1" 404 -
+223.16.18.182 - - [29/Apr/2022 22:31:18] "GET /?pattern=CDL3INSIDE HTTP/1.1" 200 -
+223.16.18.182 - - [29/Apr/2022 22:31:34] "GET /?pattern=CDL3INSIDE HTTP/1.1" 200 -
+10.156.229.200 - - [29/Apr/2022 22:38:56] "GET /?pattern=CDLMARUBOZU HTTP/1.1" 200 -
+10.156.229.200 - - [29/Apr/2022 22:53:28] "GET /?pattern=CDLMARUBOZU HTTP/1.1" 200 -
+104.206.128.14 - - [30/Apr/2022 00:34:30] "GET / HTTP/1.0" 200 -
+10.156.229.200 - - [30/Apr/2022 00:54:10] "GET /?pattern=CDLXSIDEGAP3METHODS HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 00:54:19] "GET /?pattern=CDLTRISTAR HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 01:00:08] "GET / HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 01:01:48] "GET /?pattern=CDLMARUBOZU HTTP/1.1" 200 -
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.156.229.234:5000 (Press CTRL+C to quit)
+10.156.229.200 - - [30/Apr/2022 11:47:59] "GET / HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 11:48:14] "GET / HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 11:53:25] "GET /?pattern=CDL3STARSINSOUTH HTTP/1.1" 200 -
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: development
+ * Debug mode: on
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+10.156.229.200 - - [30/Apr/2022 12:45:42] "GET / HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 12:45:43] "GET /favicon.ico HTTP/1.1" 404 -
+10.156.229.200 - - [30/Apr/2022 12:46:14] "GET / HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 12:46:15] "GET / HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 12:46:16] "GET / HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 12:46:21] "GET /?pattern=CDL3WHITESOLDIERS HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 12:46:29] "GET /?pattern=CDLDOJI HTTP/1.1" 200 -
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: development
+ * Debug mode: on
+ * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.156.229.234:5000 (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 739-913-440
+10.156.229.200 - - [30/Apr/2022 12:47:37] "GET /?pattern=CDLDOJI HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 12:47:51] "GET /?pattern=CDLCOUNTERATTACK HTTP/1.1" 200 -
+61.18.202.107 - - [30/Apr/2022 12:48:41] "GET / HTTP/1.1" 200 -
+61.18.202.107 - - [30/Apr/2022 12:48:43] "GET /favicon.ico HTTP/1.1" 404 -
+61.18.202.107 - - [30/Apr/2022 12:48:53] "GET /?pattern=CDL3WHITESOLDIERS HTTP/1.1" 200 -
+61.18.202.107 - - [30/Apr/2022 12:48:54] "GET /favicon.ico HTTP/1.1" 404 -
+61.18.202.107 - - [30/Apr/2022 12:49:08] "GET /?pattern=CDL3BLACKCROWS HTTP/1.1" 200 -
+61.18.202.107 - - [30/Apr/2022 12:49:08] "GET /favicon.ico HTTP/1.1" 404 -
+ * Detected change in '/home/ycm/code/web-screen/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 739-913-440
+ * Detected change in '/home/ycm/code/web-screen/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 739-913-440
+10.156.229.200 - - [30/Apr/2022 12:51:28] "GET / HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 12:51:29] "GET /table HTTP/1.1" 404 -
+10.156.229.200 - - [30/Apr/2022 12:51:30] "GET /?pattern=CDLCOUNTERATTACK HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 12:51:34] "GET / HTTP/1.1" 200 -
+ * Detected change in '/home/ycm/code/web-screen/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 739-913-440
+10.156.229.200 - - [30/Apr/2022 12:51:41] "GET / HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 12:51:43] "GET /tab HTTP/1.1" 404 -
+10.156.229.200 - - [30/Apr/2022 12:51:52] "GET / HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 12:51:53] "GET / HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 12:51:54] "GET /overview HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 12:56:58] "GET /overview HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 12:57:00] "GET /overview HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 12:57:01] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 2095, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 2080, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/ycm/code/web-screen/app.py", line 39, in index
+    return render_template("index.html", patterns= patterns, stock = stock, current_pattern = current_pattern) #set patterns = patterns import from pattern.py
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/templating.py", line 149, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/ycm/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/ycm/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/home/ycm/.local/lib/python3.8/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/ycm/.local/lib/python3.8/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/home/ycm/.local/lib/python3.8/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/ycm/.local/lib/python3.8/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/ycm/code/web-screen/templates/index.html", line 45, in template
+    {% endfor %}
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+10.156.229.200 - - [30/Apr/2022 12:57:01] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 12:57:01] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 12:57:01] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 12:57:16] "GET / HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 12:57:36] "GET / HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 12:58:08] "GET / HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 12:58:08] "GET / HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 12:58:10] "GET /?stock=AES HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 12:59:14] "GET /?stock=AES HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 12:59:17] "GET /?stock=MMM HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 12:59:19] "GET /?stock=ABBV HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:02:19] "GET /?stock=ABBV HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:02:20] "GET / HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:02:21] "GET /tab HTTP/1.1" 404 -
+10.156.229.200 - - [30/Apr/2022 13:02:25] "GET / HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:02:25] "GET /overview HTTP/1.1" 200 -
+ * Detected change in '/home/ycm/code/web-screen/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 739-913-440
+10.156.229.200 - - [30/Apr/2022 13:04:13] "GET /overview HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:04:18] "GET /overview?stock=APD HTTP/1.1" 200 -
+ * Detected change in '/home/ycm/code/web-screen/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 739-913-440
+ * Detected change in '/home/ycm/code/web-screen/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 739-913-440
+ * Detected change in '/home/ycm/code/web-screen/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 739-913-440
+10.156.229.200 - - [30/Apr/2022 13:15:36] "GET /overview?stock=ADBE HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 2095, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 2080, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/ycm/code/web-screen/app.py", line 59, in overview
+    df = pd.read_csv('datasets/daily/{}'.format(current_stock))
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 933, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1217, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/io/common.py", line 789, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'datasets/daily/ADBE'
+10.156.229.200 - - [30/Apr/2022 13:15:37] "GET /overview?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:15:37] "GET /overview?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:15:37] "GET /overview?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:15:37] "GET /overview?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+10.156.229.200 - - [30/Apr/2022 13:15:48] "GET /overview?stock=AGN HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 2095, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 2080, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/ycm/code/web-screen/app.py", line 59, in overview
+    df = pd.read_csv('datasets/daily/{}'.format(current_stock))
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 933, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1217, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/io/common.py", line 789, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'datasets/daily/AGN'
+10.156.229.200 - - [30/Apr/2022 13:15:48] "GET /overview?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 304 -
+10.156.229.200 - - [30/Apr/2022 13:15:48] "GET /overview?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 304 -
+10.156.229.200 - - [30/Apr/2022 13:15:48] "GET /overview?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+ * Detected change in '/home/ycm/code/web-screen/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 739-913-440
+10.156.229.200 - - [30/Apr/2022 13:16:06] "GET /overview?stock=AGN HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 2095, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 2080, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/ycm/code/web-screen/app.py", line 59, in overview
+    df = pd.read_csv('datasets/daily/{}/.csv'.format(current_stock))
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 933, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1217, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/io/common.py", line 789, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'datasets/daily/AGN/.csv'
+10.156.229.200 - - [30/Apr/2022 13:16:06] "GET /overview?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 304 -
+10.156.229.200 - - [30/Apr/2022 13:16:06] "GET /overview?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 304 -
+10.156.229.200 - - [30/Apr/2022 13:16:06] "GET /overview?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+ * Detected change in '/home/ycm/code/web-screen/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 739-913-440
+10.156.229.200 - - [30/Apr/2022 13:16:14] "GET /overview?stock=AGN HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:16:18] "GET /overview?stock=ALB HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:16:22] "GET /overview?stock=AMT HTTP/1.1" 200 -
+89.248.165.48 - - [30/Apr/2022 13:16:45] code 400, message Bad request syntax ('\x03\x00\x00\x13\x0eà\x00\x00\x00\x00\x00\x01\x00\x08\x00\x02\x00\x00\x00')
+89.248.165.48 - - [30/Apr/2022 13:16:45] "  à          " HTTPStatus.BAD_REQUEST -
+ * Detected change in '/home/ycm/code/web-screen/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 739-913-440
+10.156.229.200 - - [30/Apr/2022 13:17:04] "GET /overview?stock=A HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:17:36] "GET /overview?stock=A HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:18:03] "GET /overview?stock=ACN HTTP/1.1" 200 -
+ * Detected change in '/home/ycm/code/web-screen/app.py', reloading
+A
+A
+ACN
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 739-913-440
+10.156.229.200 - - [30/Apr/2022 13:18:39] "GET /overview?stock=AES HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 2095, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 2080, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/ycm/code/web-screen/app.py", line 60, in overview
+    df = pd.read_csv('datasets/daily/{}/.csv'.format(current_stock))
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 933, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1217, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/io/common.py", line 789, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'datasets/daily/AES/.csv'
+10.156.229.200 - - [30/Apr/2022 13:18:39] "GET /overview?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 304 -
+10.156.229.200 - - [30/Apr/2022 13:18:39] "GET /overview?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 304 -
+10.156.229.200 - - [30/Apr/2022 13:18:39] "GET /overview?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+ * Detected change in '/home/ycm/code/web-screen/app.py', reloading
+AES
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 739-913-440
+10.156.229.200 - - [30/Apr/2022 13:19:08] "GET /overview?stock=AES HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:19:10] "GET /overview?stock=ALLE HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:19:25] "GET /overview?stock=AES HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:19:39] "GET /overview?stock=MMM HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:19:50] "GET /overview?stock=ABT HTTP/1.1" 200 -
+ * Detected change in '/home/ycm/code/web-screen/app.py', reloading
+AES
+ALLE
+AES
+MMM
+ABT
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 739-913-440
+10.156.229.200 - - [30/Apr/2022 13:21:37] "GET /overview?stock=ABT HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:21:40] "GET /overview?stock=AAP HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:21:57] "GET /overview?stock=ADBE HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:21:57] "GET /overview?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 304 -
+10.156.229.200 - - [30/Apr/2022 13:21:57] "GET /overview?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+10.156.229.200 - - [30/Apr/2022 13:21:57] "GET /overview?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 304 -
+ * Detected change in '/home/ycm/code/web-screen/app.py', reloading
+ABT
+Hello
+AAP
+Hello
+ADBE
+Hello
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 739-913-440
+ * Detected change in '/home/ycm/code/web-screen/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 739-913-440
+10.156.229.200 - - [30/Apr/2022 13:23:02] "GET /overview?stock=AKAM HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:23:15] "GET /overview?stock=AKAM HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:23:16] "GET /overview HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 2095, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 2080, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/ycm/code/web-screen/app.py", line 59, in overview
+    df = pd.read_csv('datasets/daily/{}.csv'.format(current_stock))
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 933, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1217, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/io/common.py", line 789, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'datasets/daily/None.csv'
+10.156.229.200 - - [30/Apr/2022 13:23:16] "GET /overview?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 304 -
+10.156.229.200 - - [30/Apr/2022 13:23:16] "GET /overview?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 304 -
+10.156.229.200 - - [30/Apr/2022 13:23:16] "GET /overview?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+10.156.229.200 - - [30/Apr/2022 13:23:17] "GET / HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:23:23] "GET /?pattern=CDLDOJI HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:23:29] "GET / HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:23:29] "GET /overview HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 2095, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 2080, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ycm/.local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/ycm/code/web-screen/app.py", line 59, in overview
+    df = pd.read_csv('datasets/daily/{}.csv'.format(current_stock))
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 933, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1217, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "/home/ycm/.local/lib/python3.8/site-packages/pandas/io/common.py", line 789, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'datasets/daily/None.csv'
+10.156.229.200 - - [30/Apr/2022 13:23:29] "GET /overview?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 304 -
+10.156.229.200 - - [30/Apr/2022 13:23:29] "GET /overview?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 304 -
+10.156.229.200 - - [30/Apr/2022 13:23:29] "GET /overview?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+10.156.229.200 - - [30/Apr/2022 13:23:31] "GET /?pattern=CDLDOJI HTTP/1.1" 200 -
+ * Detected change in '/home/ycm/code/web-screen/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 739-913-440
+10.156.229.200 - - [30/Apr/2022 13:24:05] "GET /overview HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:24:16] "GET /overview?stock=AMT HTTP/1.1" 200 -
+ * Detected change in '/home/ycm/code/web-screen/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 739-913-440
+10.156.229.200 - - [30/Apr/2022 13:24:48] "GET /overview?stock=AMT HTTP/1.1" 200 -
+ * Detected change in '/home/ycm/code/web-screen/app.py', reloading
+{}
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 739-913-440
+10.156.229.200 - - [30/Apr/2022 13:26:23] "GET /overview?stock=AMT HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:26:47] "GET /overview?stock=AXP HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:27:20] "GET /overview?stock=AXP HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:27:34] "GET /overview?stock=MMM HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:27:36] "GET /overview?stock=AES HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:27:57] "GET /overview?stock=AES HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:27:58] "GET /overview?stock=MMM HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:27:59] "GET /overview?stock=ARE HTTP/1.1" 200 -
+ * Detected change in '/home/ycm/code/web-screen/app.py', reloading
+debug
+{}
+debug
+{}
+debug
+{}
+debug
+{}
+debug
+{}
+debug
+{}
+debug
+{}
+debug
+{}
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 739-913-440
+10.156.229.200 - - [30/Apr/2022 13:29:15] "GET /overview?stock=AAP HTTP/1.1" 200 -
+ * Detected change in '/home/ycm/code/web-screen/app.py', reloading
+debug
+{}
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 739-913-440
+ * Detected change in '/home/ycm/code/web-screen/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 739-913-440
+ * Detected change in '/home/ycm/code/web-screen/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 739-913-440
+10.156.229.200 - - [30/Apr/2022 13:31:22] "GET /overview?stock=ALK HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:31:48] "GET /overview?stock=ATVI HTTP/1.1" 200 -
+ * Detected change in '/home/ycm/code/web-screen/app.py', reloading
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 739-913-440
+10.156.229.200 - - [30/Apr/2022 13:36:05] "GET /overview?stock=AES HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:36:21] "GET /overview?stock=ABT HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:36:51] "GET /overview?stock=AMT HTTP/1.1" 200 -
+ * Detected change in '/home/ycm/code/web-screen/app.py', reloading
+AES
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+ABT
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+AMT
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 739-913-440
+10.156.229.200 - - [30/Apr/2022 13:40:25] "GET /overview?stock=MMM HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:40:55] "GET /overview?stock=MMM HTTP/1.1" 200 -
+10.156.229.200 - - [30/Apr/2022 13:41:05] "GET /overview?stock=MMM HTTP/1.1" 200 -

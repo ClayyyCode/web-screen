@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <style>
+      body { font-family: arial; font-size: medium}
+      td { padding: 10px; font-size: smaller;}
+      .bullish {background-color: green; color: white;}
+      .bearish {background-color: red; color: white;}
+      .None {background-color: black; color: white;}
+    </style>
+  </head>
+  <body>
+    <form>
+      <select name = "stock">
+        {% for symbol in stock %}
+          <option value ="{{symbol}}">{{stock[symbol]['company name']}}</option>
+        {% endfor %}
+      </select>
+      <input type = "submit" value="show">
+    </form>
+    <table>
+      <tr>
+        <th>pattern</th>
+        <th>singal</th>
+      </tr>
+      {% for pattern in show_pattern %}
+        <tr>
+          <td>{{pattern}}</td>
+          <td class = "{{show_pattern[pattern]}}">{{show_pattern[pattern]}}</td>
+        </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
