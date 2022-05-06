@@ -38,13 +38,5 @@
         {% endif %}
       {% endfor %}
     </table>
-    <form>
-      <select name = "stock">
-        {% for symbol in stock %}
-          <option value ="{{symbol}}">{{stock[symbol]['company name']}}</option>
-        {% endfor %}
-      </select>
-      <input type = "submit" value="show">
-    </form>
   </body>
 </html>

@@ -28,6 +28,9 @@ def index():
       try:
         result = pattern_func(df['Open'], df['High'], df['Low'], df['Close'])
         last = result.tail(1).values[0]
+        if symbol == "MMM":
+          print(result)
+          print(pattern_func)
         if last > 0:
           stock[symbol][current_pattern] = "bullish"
         elif last < 0:
@@ -42,11 +45,11 @@ def index():
 def update():
   with open (STOCK_NAME_PATH) as f:
     stocks = f.read().splitlines()
-    for stock in stocks :
+    for stock in stocks:
       symbol = stock.split(',')[0]
-      df = yf.download(symbol, start = "2022-01-01", end = date.today().strftime("%Y-%m-%d") )
+      df = yf.download(symbol, start = "2022-04-01", end = date.today().strftime("%Y-%m-%d") )
       df.to_csv('datasets/daily/{}.csv'.format(symbol))
-  return "gg"
+  return "Updated with the latest data!"
 
 @app.route('/overview')
 def overview():
@@ -72,11 +75,10 @@ def overview():
           show_pattern[patterns[pattern]]= None
       except:
         pass
-  print(show_pattern)
   return render_template("tab.html", stock = stock, show_pattern = show_pattern, current_stock = current_stock)
 
 @app.route('/abb')
 def hello_wor():
-  return "-.-"
+  return "Hiiii"
 
 #<img src ="https://stockcharts.com/c-sc/sc?s={{ symbol }}&p=D&b=5&g=0&i=0&r=1651231120597" />
